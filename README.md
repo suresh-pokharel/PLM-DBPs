@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# pLM-DBPs
-An Enhanced DNA-Binding Protein Prediction in Plants Using Embeddings from Protein Language Model
-
-
 # This repository is currently under development and will be updated soon.
-=======
+
+
 # pLM-DBPs (DNA-Binding Protein Prediction Tool)
 **An Enhanced DNA-Binding Protein Prediction in Plants Using Embeddings from Protein Language Model**
 
@@ -15,7 +11,7 @@ An Enhanced DNA-Binding Protein Prediction in Plants Using Embeddings from Prote
 
 ## Overview
 
-This tool predicts whether a given protein sequence is a DNA-binding protein (DBP) using features extracted by the ProtT5 model. It takes a FASTA file as input, processes each sequence, and outputs a CSV file with probabilities and binary predictions (DNA Binding or Non-DNA Binding).
+This tool predicts whether a given protein sequence is a DNA-binding protein (DBP) using features extracted by the ProtT5 model. It inputs a FASTA file, processes each sequence, and outputs a CSV file with probabilities and binary predictions (DNA Binding or Non-DNA Binding).
 
 ## Features
 
@@ -40,5 +36,4 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
 1. Clone the repository:
    ```bash
    git clone https://github.com/suresh-pokharel/pLM-DBPs.git
-   cd DNA-Binding-Protein-Prediction
->>>>>>> a9d209f (Add test notebook)
+   cd pLM-DBPs
