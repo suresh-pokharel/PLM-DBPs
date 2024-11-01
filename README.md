@@ -37,3 +37,6 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
    ```bash
    git clone https://github.com/suresh-pokharel/pLM-DBPs.git
    cd pLM-DBPs
+
+2. Run the predict.py (input and output paths)
+# python predict.py input/example.fasta output/result.csv
