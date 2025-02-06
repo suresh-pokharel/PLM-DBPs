@@ -1,6 +1,3 @@
-# This repository is currently under development and will be updated soon.
-
-
 # pLM-DBPs (DNA-Binding Protein Prediction Tool)
 **An Enhanced DNA-Binding Protein Prediction in Plants Using Embeddings from Protein Language Model**
 
