@@ -50,11 +50,10 @@ MAIN_DIR = os.getcwd()
 print("MAIN_DIR:", MAIN_DIR)
 
 # Load pLMDBPs base models
-ProtT5_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/P1.keras"), compile=False)
-SaProt_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/S1.keras"), compile=False)
+ProtT5_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/ProtT5_pLMDBPs.keras"), compile=False)
+SaProt_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/SaProt_pLMDBPs.keras"), compile=False)
 
 # we are now running on cpu, you can change to 'cude:0' for GPU and configure 
-tf_device = tf.device('cpu')
 device = torch.device('cpu')
 
 
