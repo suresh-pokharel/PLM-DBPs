@@ -15,6 +15,7 @@ import re
 import argparse
 import subprocess
 from io import StringIO
+import joblib
 
 # Data Manipulation
 import pandas as pd
@@ -49,8 +50,8 @@ MAIN_DIR = os.getcwd()
 print("MAIN_DIR:", MAIN_DIR)
 
 # Load pLMDBPs base models
-ProtT5_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/ProtT5_ann_model_1.keras"), compile=False)
-SaProt_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/SaProt_ann_model_1.keras"), compile=False)
+ProtT5_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/P1.keras"), compile=False)
+SaProt_ann_model = load_model(os.path.join(MAIN_DIR, "assets/models/S1.keras"), compile=False)
 
 # we are now running on cpu, you can change to 'cude:0' for GPU and configure 
 tf_device = tf.device('cpu')
@@ -250,11 +251,16 @@ def make_prediction(fasta_file_path):
         SaProt_embeddings = get_SaProt_embeddings(AA_Seq).detach().cpu()
 
         # Reshape embeddings, it should be (1, 1024) and (1,1280)
+        # Also apply scaling if needed
         if ProtT5_embeddings.ndimension() == 1:
             ProtT5_embeddings = ProtT5_embeddings.unsqueeze(0)  # Shape becomes (1, 1024)
         
         if SaProt_embeddings.ndimension() == 1:
             SaProt_embeddings = SaProt_embeddings.unsqueeze(0)  # Shape becomes (1, 1280)
+
+            # apply scaling
+            scaler_saprot = joblib.load(MAIN_DIR + "/assets/models/scaler_saprot.pkl") # load standard scaler fitted with train set
+            SaProt_embeddings = scaler_saprot.transform(SaProt_embeddings)
 
         # Get predictions
         ProtT5_ANN_prob = ProtT5_ann_model(ProtT5_embeddings).numpy().item()
