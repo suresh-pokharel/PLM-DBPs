@@ -12,10 +12,10 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
 
 ## Embeddings
 
-- **ProtT5** Sequence based protein representation.
-- **SaProt** Structure aware protein representation.
+- **ProtT5** Sequence based protein representation. (https://ieeexplore.ieee.org/abstract/document/9477085, https://github.com/agemagician/ProtTrans)
+- **SaProt** Structure aware protein representation.(https://github.com/westlake-repl/SaProt)
 - **Pre-trained pLM-DBPs** model for DNA-binding protein prediction.
-- 
+
 - Takes a FASTA file as input and outputs a CSV file with predictions.
 
 ## Installation
@@ -38,19 +38,13 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
     sentencepiece==0.2.0
 
 ### Installation Steps
-
 1. Clone the repository:
    ```bash
    git clone https://github.com/suresh-pokharel/pLM-DBPs.git
    cd pLM-DBPs
-```
 2. Run the predict.py (input and output paths)
-
-
-
-```bash
-python predict.py
-```
+   ```bash
+    python predict.py input/example.fasta
 
 
 ### Full training code and data will be uploaded after publication.
