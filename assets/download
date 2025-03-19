@@ -1,3 +1,7 @@
 Download all folders from the link and place them inside assets:
-
+    
 https://drive.google.com/drive/u/2/folders/1O2wDKRBoKNHCXaSD1JMm1tJIY7F3hrJG
+
+You may use gdown or other scripts or manually download and replace
+pip install gdown   # or use pip3
+gdown --folder https://drive.google.com/drive/u/2/folders/1O2wDKRBoKNHCXaSD1JMm1tJIY7F3hrJG
