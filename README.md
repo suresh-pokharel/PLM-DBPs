@@ -21,7 +21,6 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
 ## Installation
 
 ### Requirements
-    Python 3.10.6
     biopython==1.83
     numpy==1.24.4
     pandas==2.2.3
@@ -32,10 +31,12 @@ This tool predicts whether a given protein sequence is a DNA-binding protein (DB
     torch==1.11.0
     protobuf==4.25.3
     keras==3.9.0
-    pytorch-lightning==1.8.3
     scikit-learn==1.4.2
     scipy==1.15.2
     sentencepiece==0.2.0
+    ipython==8.12.3
+    pytz==2025.1
+    pytorch-lightning==1.8.3
 
 ### Installation Steps
 1. Clone the repository:
