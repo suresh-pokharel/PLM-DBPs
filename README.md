@@ -1,7 +1,6 @@
 # PLM-DBPs (DNA-Binding Protein Prediction Tool for Plants)
 **PLM-DBPs: Enhancing Plant DNA-Binding Protein Prediction by Integrating Sequence-Based and Structure-Aware Protein Language Models**
 
-
 **Author**: Suresh Pokharel et al.  
 **Email**: [sp2530@rit.edu](mailto:sp2530@rit.edu)  
 **Affiliation**: Rochester Institute of Technology  
@@ -20,15 +19,16 @@ PLM-DBPs is a deep-learning framework designed to accurately predict DNA-binding
 
 
 ## Installation
-<div style="color:red; font-weight:bold;">
+
 
 ### Make sure to create a new environment:
 
-</div>
+
 
 ```bash
 conda create --name plmdbps python=3.10.16
 conda activate plmdbps
+```
 
 ### Requirements
     biopython==1.83
@@ -57,5 +57,5 @@ conda activate plmdbps
    ```bash
     python predict.py input/example.fasta
 
-
-### Full training code and data will be uploaded after publication.
+### Web-Server Coming Soon
+### Note: Full training script and data will be uploaded soon.
