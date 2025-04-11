@@ -1,5 +1,5 @@
-# pLM-DBPs (DNA-Binding Protein Prediction Tool)
-**An Enhanced DNA-Binding Protein Prediction in Plants Using Embeddings from Protein Language Model**
+# PLM-DBPs (DNA-Binding Protein Prediction Tool for Plants)
+**PLM-DBPs: Enhancing Plant DNA-Binding Protein Prediction by Integrating Sequence-Based and Structure-Aware Protein Language Models**
 
 
 **Author**: Suresh Pokharel et al.  
@@ -8,17 +8,27 @@
 
 ## Overview
 
-This tool predicts whether a given protein sequence is a DNA-binding protein (DBP) using pLMs based embeddings extracted by the ProtT5 and SaProt. It inputs a FASTA file, processes each sequence, and outputs a CSV file with probabilities and binary predictions (DNA Binding or Non-DNA Binding).
+PLM-DBPs is a deep-learning framework designed to accurately predict DNA-binding proteins (DBPs) in plants by integrating advanced sequence-based protein language model (ProtT5) with structure-aware representations (SaProt). Our approach effectively leverages the complementary information from sequence and structural features, surpassing previous state-of-the-art methods tailored for general DBP prediction. The repository contains the complete implementation and resources required to utilize or extend this model for further research in plant genomics and biotechnology. 
+
+**Input:** A Fasta file with protein sequences
+**Output:** A CSV file with probabilities and binary predictions (DNA Binding or Non-DNA Binding).
 
 ## Embeddings
-
 - **ProtT5** Sequence based protein representation. (https://ieeexplore.ieee.org/abstract/document/9477085, https://github.com/agemagician/ProtTrans)
 - **SaProt** Structure aware protein representation.(https://github.com/westlake-repl/SaProt)
 - **Pre-trained pLM-DBPs** model for DNA-binding protein prediction.
 
-- Takes a FASTA file as input and outputs a CSV file with predictions.
 
 ## Installation
+<div style="color:red; font-weight:bold;">
+
+### Make sure to create a new environment:
+
+</div>
+
+```bash
+conda create --name plmdbps python=3.10.16
+conda activate plmdbps
 
 ### Requirements
     biopython==1.83
