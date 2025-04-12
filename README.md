@@ -23,12 +23,12 @@ PLM-DBPs is a deep-learning framework designed to accurately predict DNA-binding
 
 ### Make sure to create a new environment:
 
-
-
 ```bash
 conda create --name plmdbps python=3.10.16
 conda activate plmdbps
 ```
+> ⚠️ **Note:** There might be slight variations in the versions of Python libraries depending on your system configuration.  
+If you encounter any issues or need assistance setting things up, please feel free to reach out by opening an issue or contacting us directly.
 
 ### Requirements
     biopython==1.83
