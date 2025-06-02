@@ -57,5 +57,14 @@ If you encounter any issues or need assistance setting things up, please feel fr
    ```bash
     python predict.py input/example.fasta
 
+### Citation
+
+If you use this work, please cite:
+
+> Suresh Pokharel, Kepha Barasa, Pawel Pratyush, and Dukka B. KC.  
+> **PLM-DBPs: Enhancing plant DNA-binding protein prediction by integrating sequence-based and structure-aware protein language models**.  
+> *Briefings in Bioinformatics*, Volume 26, Issue 3, 2025, bbaf245.  
+> [https://doi.org/10.1093/bib/bbaf245](https://doi.org/10.1093/bib/bbaf245)
+
 ### Web-Server Coming Soon
 ### Note: Full training script and data will be uploaded soon.
